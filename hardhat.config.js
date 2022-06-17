@@ -17,5 +17,12 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * @type import('hardhat/config').HardhatUserConfig
  */
 module.exports = {
-  solidity: "0.8.14",
+  networks: {
+    devnet: {
+      url: "https://api.s0.ps.hmny.io",
+      accounts: ["423a6c9415c1c09490f25a1e62f9fb53e6ad2f7fdddf4a468c205738be8a9906"]
+    }
+  },
+
+  solidity: "0.8.15"
 };
